@@ -19,6 +19,7 @@ React(vite), React Router, Context API, Tailwind CSS, Firebase Auth + Firestore,
 2. `npm install`
 3. Copy `.env.example` to `.env` and add your Firebase values
 4. `npm run dev`
+5. `Vercel: https://bookshelf-eta-mauve.vercel.app/`
 
 ## Tests
 `npm run coverage`
