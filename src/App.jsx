@@ -4,6 +4,7 @@ import { auth } from "./firebase";
 import { AuthProvider, useAuth } from "./AuthContext";
 import ProtectedRoute from "./ProtectedRoute";
 import AuthForm from "./AuthForm";
+import Search from "./Search";
 
 function Nav() {
   const { user } = useAuth();
@@ -31,7 +32,7 @@ export default function App() {
           <Route path="/login" element={<AuthForm />} />
           <Route path="/register" element={<AuthForm register />} />
           <Route element={<ProtectedRoute />}>
-            <Route path="/" element={<p className="p-4">Search coming soon</p>} />
+            <Route path="/" element={<Search />} />
           </Route>
         </Routes>
       </BrowserRouter>
