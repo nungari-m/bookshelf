@@ -5,6 +5,7 @@ import { AuthProvider, useAuth } from "./AuthContext";
 import ProtectedRoute from "./ProtectedRoute";
 import AuthForm from "./AuthForm";
 import Search from "./Search";
+import MyBooks from "./MyBooks";
 
 function Nav() {
   const { user } = useAuth();
@@ -18,6 +19,7 @@ function Nav() {
     <nav className="bg-blue-600 text-white p-3 flex gap-4 items-center">
       <b className="flex-1">📚 BookShelf</b>
       <Link to="/">Search</Link>
+      <Link to="/my-books">My Books</Link>
       <button onClick={logout}>Logout</button>
     </nav>
   );
@@ -33,6 +35,7 @@ export default function App() {
           <Route path="/register" element={<AuthForm register />} />
           <Route element={<ProtectedRoute />}>
             <Route path="/" element={<Search />} />
+            <Route path="/my-books" element={<MyBooks />} />
           </Route>
         </Routes>
       </BrowserRouter>
