@@ -11,7 +11,7 @@ export default defineConfig({
     setupFiles: "./src/setup.js",
     coverage: {
       provider: "v8",
-      include: ["src/**"],
+      include: ["src/**/*.{js,jsx}"],
       exclude: ["src/main.jsx", "src/firebase.js", "src/setup.js", "src/**/*.test.jsx"],
       thresholds: { lines: 65 },
     },
