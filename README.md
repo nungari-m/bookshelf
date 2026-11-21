@@ -3,6 +3,8 @@
 Search books with the Open Library API, save them to a private reading list, set a status (Want to Read, Reading, Finished) and add notes.
 
 **Live site:** https://bookshelf-eta-mauve.vercel.app/
+**Figma wireframes:**https://www.figma.com/design/Xm6yWDjiaHHa3TQ1SpqUiw/Bookshelf-Wireframes?node-id=9-14&t=Ymq50VzCLIU4Or7F-0
+**Clickable prototype:**https://www.figma.com/design/Xm6yWDjiaHHa3TQ1SpqUiw/Bookshelf-Wireframes?node-id=9-14&t=Ymq50VzCLIU4Or7F-1
 
 ## Features
 - Register, login and logout with email/password, plus Google sign-in
